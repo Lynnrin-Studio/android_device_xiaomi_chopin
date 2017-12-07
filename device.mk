@@ -63,6 +63,11 @@ PRODUCT_PACKAGES += \
     mtk_plpath_utils \
     mtk_plpath_utils.recovery
 
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.base@1.0 \
+    android.hidl.manager@1.0
+
 # Kernel
 PRODUCT_COPY_FILES += \
     $(CHOPIN_PREBUILT)/kernel/dtb.img:dtb.img
