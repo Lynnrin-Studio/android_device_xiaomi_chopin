@@ -8,6 +8,7 @@ DEVICE_PATH := device/xiaomi/chopin
 CHOPIN_PREBUILT := device/xiaomi/chopin-prebuilt
 
 BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # A/B
 AB_OTA_UPDATER := true
