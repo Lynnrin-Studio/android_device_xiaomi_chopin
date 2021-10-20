@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+CHOPIN_PREBUILT := device/xiaomi/chopin-prebuilt
+
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
@@ -56,6 +58,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     mtk_plpath_utils \
     mtk_plpath_utils.recovery
+
+# Kernel
+PRODUCT_COPY_FILES += \
+    $(CHOPIN_PREBUILT)/kernel/dtb.img:dtb.img
 
 # Overlays
 PRODUCT_PACKAGES += \
