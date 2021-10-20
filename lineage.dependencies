@@ -1,2 +1,6 @@
 [
+  {
+    "repository": "android_device_xiaomi_chopin-prebuilt",
+    "target_path": "device/xiaomi/chopin-prebuilt"
+  }
 ]
