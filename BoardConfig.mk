@@ -106,6 +106,9 @@ TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
 TARGET_BOARD_PLATFORM := mt6893
 
 # Properties
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/properties/product.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/properties/system.prop
+
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
 # Releasetools
