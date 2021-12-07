@@ -33,6 +33,14 @@ AB_OTA_POSTINSTALL_CONFIG += \
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
+# Boot control HAL
+PRODUCT_PACKAGES += \
+    android.hardware.boot@1.1-mtkimpl.recovery \
+    android.hardware.boot@1.1-mtkimpl
+
+PRODUCT_PACKAGES_DEBUG += \
+    bootctrl
+
 # fastbootd
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
