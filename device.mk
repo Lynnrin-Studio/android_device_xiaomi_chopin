@@ -62,7 +62,8 @@ PRODUCT_PACKAGES_DEBUG += \
 PRODUCT_PACKAGES += \
     init.recovery.mt6891.rc \
     init.recovery.mt6893.rc \
-    init.recovery.usb.rc
+    init.recovery.usb.rc \
+    init.chopin.rc
 
 # fastbootd
 PRODUCT_PACKAGES += \
@@ -93,6 +94,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.manager@1.0
+
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.lights-service.chopin
 
 # Kernel
 PRODUCT_COPY_FILES += \
