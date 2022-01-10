@@ -52,6 +52,11 @@ PRODUCT_PACKAGES += \
     f2fs_io \
     check_f2fs
 
+# MT-PL-Utils
+PRODUCT_PACKAGES += \
+    mtk_plpath_utils \
+    mtk_plpath_utils.recovery
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
