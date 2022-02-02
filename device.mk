@@ -32,6 +32,10 @@ AB_OTA_POSTINSTALL_CONFIG += \
     FILESYSTEM_TYPE_system=ext4 \
     POSTINSTALL_OPTIONAL_system=true
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/lib64/hw/android.hardware.boot@1.0-impl-1.1-mtkimpl.so:recovery/root/system/lib64/hw/android.hardware.boot@1.0-impl-1.1-mtkimpl.so \
+    $(LOCAL_PATH)/rootdir/lib64/hw/android.hardware.fastboot@1.0-impl-mtk.so:recovery/root/system/lib64/hw/android.hardware.fastboot@1.0-impl-mtk.so
+
 # Audio
  PRODUCT_PACKAGES += \
     audio.a2dp.default \
