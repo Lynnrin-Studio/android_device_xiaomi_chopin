@@ -1,6 +1,2 @@
-# Bootctrl
-system/lib64/android.hardware.boot@1.0.so
-system/lib64/android.hardware.boot@1.1.so
-
 # Carrier Config
 -system_ext/priv-app/MtkCarrierConfig/MtkCarrierConfig.apk
